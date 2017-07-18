@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E55A01F31F1AD481002DD238 /* BJCardsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E55A01F21F1AD481002DD238 /* BJCardsView.m */; };
+		E577A51C1F1ECA4900078030 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E577A51B1F1ECA4900078030 /* CoreData.framework */; };
+		E58B8D271F17C9AE0074FF19 /* BJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E58B8D261F17C9AE0074FF19 /* BJModel.m */; };
+		E5A1AB791F1B8541004B40C6 /* BJUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A1AB781F1B8541004B40C6 /* BJUIView.m */; };
+		E5D92A4E1F16BC3600B8D3AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D92A4D1F16BC3600B8D3AF /* main.m */; };
+		E5D92A511F16BC3600B8D3AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D92A501F16BC3600B8D3AF /* AppDelegate.m */; };
+		E5D92A541F16BC3600B8D3AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D92A531F16BC3600B8D3AF /* ViewController.m */; };
+		E5D92A571F16BC3600B8D3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D92A551F16BC3600B8D3AF /* Main.storyboard */; };
+		E5D92A5A1F16BC3600B8D3AF /* blackjackTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5D92A581F16BC3600B8D3AF /* blackjackTest.xcdatamodeld */; };
+		E5D92A5C1F16BC3600B8D3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D92A5B1F16BC3600B8D3AF /* Assets.xcassets */; };
+		E5D92A5F1F16BC3600B8D3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D92A5D1F16BC3600B8D3AF /* LaunchScreen.storyboard */; };
+		E5D92A6A1F16BC3600B8D3AF /* blackjackTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D92A691F16BC3600B8D3AF /* blackjackTestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5D92A661F16BC3600B8D3AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5D92A411F16BC3500B8D3AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5D92A481F16BC3500B8D3AF;
+			remoteInfo = blackjackTest;
+		};
+		E5D92A711F16BC3600B8D3AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5D92A411F16BC3500B8D3AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5D92A481F16BC3500B8D3AF;
+			remoteInfo = blackjackTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E55A01F11F1AD481002DD238 /* BJCardsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCardsView.h; sourceTree = "<group>"; };
+		E55A01F21F1AD481002DD238 /* BJCardsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCardsView.m; sourceTree = "<group>"; };
+		E577A51B1F1ECA4900078030 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E58B8D251F17C9AE0074FF19 /* BJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJModel.h; sourceTree = "<group>"; };
+		E58B8D261F17C9AE0074FF19 /* BJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJModel.m; sourceTree = "<group>"; };
+		E5A1AB771F1B8541004B40C6 /* BJUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJUIView.h; sourceTree = "<group>"; };
+		E5A1AB781F1B8541004B40C6 /* BJUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJUIView.m; sourceTree = "<group>"; };
+		E5D92A491F16BC3500B8D3AF /* blackjackTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blackjackTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D92A4D1F16BC3600B8D3AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5D92A4F1F16BC3600B8D3AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5D92A501F16BC3600B8D3AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5D92A521F16BC3600B8D3AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E5D92A531F16BC3600B8D3AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E5D92A561F16BC3600B8D3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5D92A591F16BC3600B8D3AF /* blackjackTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = blackjackTest.xcdatamodel; sourceTree = "<group>"; };
+		E5D92A5B1F16BC3600B8D3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5D92A5E1F16BC3600B8D3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5D92A601F16BC3600B8D3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D92A651F16BC3600B8D3AF /* blackjackTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blackjackTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D92A691F16BC3600B8D3AF /* blackjackTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blackjackTestTests.m; sourceTree = "<group>"; };
+		E5D92A6B1F16BC3600B8D3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D92A701F16BC3600B8D3AF /* blackjackTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blackjackTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D92A831F16D9C800B8D3AF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5D92A461F16BC3500B8D3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E577A51C1F1ECA4900078030 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D92A621F16BC3600B8D3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D92A6D1F16BC3600B8D3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E55A01F01F1AD459002DD238 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E55A01F11F1AD481002DD238 /* BJCardsView.h */,
+				E55A01F21F1AD481002DD238 /* BJCardsView.m */,
+				E5A1AB771F1B8541004B40C6 /* BJUIView.h */,
+				E5A1AB781F1B8541004B40C6 /* BJUIView.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		E577A51A1F1ECA4900078030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E577A51B1F1ECA4900078030 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E58B8D241F17C9610074FF19 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E58B8D251F17C9AE0074FF19 /* BJModel.h */,
+				E58B8D261F17C9AE0074FF19 /* BJModel.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		E5D92A401F16BC3500B8D3AF = {
+			isa = PBXGroup;
+			children = (
+				E5D92A4B1F16BC3500B8D3AF /* blackjackTest */,
+				E5D92A681F16BC3600B8D3AF /* blackjackTestTests */,
+				E5D92A4A1F16BC3500B8D3AF /* Products */,
+				E577A51A1F1ECA4900078030 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E5D92A4A1F16BC3500B8D3AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5D92A491F16BC3500B8D3AF /* blackjackTest.app */,
+				E5D92A651F16BC3600B8D3AF /* blackjackTestTests.xctest */,
+				E5D92A701F16BC3600B8D3AF /* blackjackTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5D92A4B1F16BC3500B8D3AF /* blackjackTest */ = {
+			isa = PBXGroup;
+			children = (
+				E55A01F01F1AD459002DD238 /* views */,
+				E58B8D241F17C9610074FF19 /* models */,
+				E5D92A821F16D9A200B8D3AF /* data */,
+				E5D92A4F1F16BC3600B8D3AF /* AppDelegate.h */,
+				E5D92A501F16BC3600B8D3AF /* AppDelegate.m */,
+				E5D92A521F16BC3600B8D3AF /* ViewController.h */,
+				E5D92A531F16BC3600B8D3AF /* ViewController.m */,
+				E5D92A551F16BC3600B8D3AF /* Main.storyboard */,
+				E5D92A5B1F16BC3600B8D3AF /* Assets.xcassets */,
+				E5D92A5D1F16BC3600B8D3AF /* LaunchScreen.storyboard */,
+				E5D92A601F16BC3600B8D3AF /* Info.plist */,
+				E5D92A581F16BC3600B8D3AF /* blackjackTest.xcdatamodeld */,
+				E5D92A4C1F16BC3600B8D3AF /* Supporting Files */,
+			);
+			path = blackjackTest;
+			sourceTree = "<group>";
+		};
+		E5D92A4C1F16BC3600B8D3AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5D92A4D1F16BC3600B8D3AF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5D92A681F16BC3600B8D3AF /* blackjackTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5D92A691F16BC3600B8D3AF /* blackjackTestTests.m */,
+				E5D92A6B1F16BC3600B8D3AF /* Info.plist */,
+			);
+			path = blackjackTestTests;
+			sourceTree = "<group>";
+		};
+		E5D92A821F16D9A200B8D3AF /* data */ = {
+			isa = PBXGroup;
+			children = (
+				E5D92A831F16D9C800B8D3AF /* Constants.h */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5D92A481F16BC3500B8D3AF /* blackjackTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5D92A791F16BC3600B8D3AF /* Build configuration list for PBXNativeTarget "blackjackTest" */;
+			buildPhases = (
+				E5D92A451F16BC3500B8D3AF /* Sources */,
+				E5D92A461F16BC3500B8D3AF /* Frameworks */,
+				E5D92A471F16BC3500B8D3AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blackjackTest;
+			productName = blackjackTest;
+			productReference = E5D92A491F16BC3500B8D3AF /* blackjackTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5D92A641F16BC3600B8D3AF /* blackjackTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5D92A7C1F16BC3600B8D3AF /* Build configuration list for PBXNativeTarget "blackjackTestTests" */;
+			buildPhases = (
+				E5D92A611F16BC3600B8D3AF /* Sources */,
+				E5D92A621F16BC3600B8D3AF /* Frameworks */,
+				E5D92A631F16BC3600B8D3AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5D92A671F16BC3600B8D3AF /* PBXTargetDependency */,
+			);
+			name = blackjackTestTests;
+			productName = blackjackTestTests;
+			productReference = E5D92A651F16BC3600B8D3AF /* blackjackTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5D92A6F1F16BC3600B8D3AF /* blackjackTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5D92A7F1F16BC3600B8D3AF /* Build configuration list for PBXNativeTarget "blackjackTestUITests" */;
+			buildPhases = (
+				E5D92A6C1F16BC3600B8D3AF /* Sources */,
+				E5D92A6D1F16BC3600B8D3AF /* Frameworks */,
+				E5D92A6E1F16BC3600B8D3AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5D92A721F16BC3600B8D3AF /* PBXTargetDependency */,
+			);
+			name = blackjackTestUITests;
+			productName = blackjackTestUITests;
+			productReference = E5D92A701F16BC3600B8D3AF /* blackjackTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5D92A411F16BC3500B8D3AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Fabio Acri";
+				TargetAttributes = {
+					E5D92A481F16BC3500B8D3AF = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = NHWBBSGXLN;
+						ProvisioningStyle = Automatic;
+					};
+					E5D92A641F16BC3600B8D3AF = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = NHWBBSGXLN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E5D92A481F16BC3500B8D3AF;
+					};
+					E5D92A6F1F16BC3600B8D3AF = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = NHWBBSGXLN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E5D92A481F16BC3500B8D3AF;
+					};
+				};
+			};
+			buildConfigurationList = E5D92A441F16BC3500B8D3AF /* Build configuration list for PBXProject "blackjackTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5D92A401F16BC3500B8D3AF;
+			productRefGroup = E5D92A4A1F16BC3500B8D3AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5D92A481F16BC3500B8D3AF /* blackjackTest */,
+				E5D92A641F16BC3600B8D3AF /* blackjackTestTests */,
+				E5D92A6F1F16BC3600B8D3AF /* blackjackTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5D92A471F16BC3500B8D3AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D92A5F1F16BC3600B8D3AF /* LaunchScreen.storyboard in Resources */,
+				E5D92A5C1F16BC3600B8D3AF /* Assets.xcassets in Resources */,
+				E5D92A571F16BC3600B8D3AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D92A631F16BC3600B8D3AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D92A6E1F16BC3600B8D3AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5D92A451F16BC3500B8D3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5A1AB791F1B8541004B40C6 /* BJUIView.m in Sources */,
+				E5D92A5A1F16BC3600B8D3AF /* blackjackTest.xcdatamodeld in Sources */,
+				E5D92A541F16BC3600B8D3AF /* ViewController.m in Sources */,
+				E5D92A511F16BC3600B8D3AF /* AppDelegate.m in Sources */,
+				E58B8D271F17C9AE0074FF19 /* BJModel.m in Sources */,
+				E55A01F31F1AD481002DD238 /* BJCardsView.m in Sources */,
+				E5D92A4E1F16BC3600B8D3AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D92A611F16BC3600B8D3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D92A6A1F16BC3600B8D3AF /* blackjackTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D92A6C1F16BC3600B8D3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5D92A671F16BC3600B8D3AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5D92A481F16BC3500B8D3AF /* blackjackTest */;
+			targetProxy = E5D92A661F16BC3600B8D3AF /* PBXContainerItemProxy */;
+		};
+		E5D92A721F16BC3600B8D3AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5D92A481F16BC3500B8D3AF /* blackjackTest */;
+			targetProxy = E5D92A711F16BC3600B8D3AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5D92A551F16BC3600B8D3AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5D92A561F16BC3600B8D3AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5D92A5D1F16BC3600B8D3AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5D92A5E1F16BC3600B8D3AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5D92A771F16BC3600B8D3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5D92A781F16BC3600B8D3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5D92A7A1F16BC3600B8D3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = NHWBBSGXLN;
+				INFOPLIST_FILE = blackjackTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabioacri.blackjackTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5D92A7B1F16BC3600B8D3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = NHWBBSGXLN;
+				INFOPLIST_FILE = blackjackTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabioacri.blackjackTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E5D92A7D1F16BC3600B8D3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NHWBBSGXLN;
+				INFOPLIST_FILE = blackjackTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabioacri.blackjackTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/blackjackTest.app/blackjackTest";
+			};
+			name = Debug;
+		};
+		E5D92A7E1F16BC3600B8D3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NHWBBSGXLN;
+				INFOPLIST_FILE = blackjackTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabioacri.blackjackTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/blackjackTest.app/blackjackTest";
+			};
+			name = Release;
+		};
+		E5D92A801F16BC3600B8D3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = NHWBBSGXLN;
+				INFOPLIST_FILE = blackjackTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabioacri.blackjackTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = blackjackTest;
+			};
+			name = Debug;
+		};
+		E5D92A811F16BC3600B8D3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = NHWBBSGXLN;
+				INFOPLIST_FILE = blackjackTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabioacri.blackjackTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = blackjackTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5D92A441F16BC3500B8D3AF /* Build configuration list for PBXProject "blackjackTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D92A771F16BC3600B8D3AF /* Debug */,
+				E5D92A781F16BC3600B8D3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5D92A791F16BC3600B8D3AF /* Build configuration list for PBXNativeTarget "blackjackTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D92A7A1F16BC3600B8D3AF /* Debug */,
+				E5D92A7B1F16BC3600B8D3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5D92A7C1F16BC3600B8D3AF /* Build configuration list for PBXNativeTarget "blackjackTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D92A7D1F16BC3600B8D3AF /* Debug */,
+				E5D92A7E1F16BC3600B8D3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5D92A7F1F16BC3600B8D3AF /* Build configuration list for PBXNativeTarget "blackjackTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D92A801F16BC3600B8D3AF /* Debug */,
+				E5D92A811F16BC3600B8D3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E5D92A581F16BC3600B8D3AF /* blackjackTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E5D92A591F16BC3600B8D3AF /* blackjackTest.xcdatamodel */,
+			);
+			currentVersion = E5D92A591F16BC3600B8D3AF /* blackjackTest.xcdatamodel */;
+			path = blackjackTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E5D92A411F16BC3500B8D3AF /* Project object */;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="BJData" representedClassName="BJData" syncable="YES" codeGenerationType="class">
+        <attribute name="dealercards" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="playstate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usercards" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BJData" positionX="-63" positionY="-18" width="128" height="90"/>
+    </elements>
+</model>
