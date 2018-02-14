@@ -16,46 +16,25 @@
 @interface ViewController : UIViewController
 
 // collectors of image views
-@property (strong, nonatomic) NSMutableArray *aDeckCards;
-@property (strong, nonatomic) NSMutableArray *aDealerCards;
-@property (strong, nonatomic) NSMutableArray *aUserCards;
+@property (nonatomic) NSMutableArray *aDeckCards;
+@property (nonatomic) NSMutableArray *aDealerCards;
+@property (nonatomic) NSMutableArray *aUserCards;
 
 // BJ Model
-@property (strong) BJModel *bjModel;
+@property (nonatomic) BJModel *bjModel;
 // BJ Views
-@property (strong, nonatomic) BJCardsView *cardsView;
-@property (strong, nonatomic) BJUIView *uiView;
-@property (strong, nonatomic) UITextField* tfResult;
+@property (nonatomic) BJCardsView *cardsView;
+@property (nonatomic) BJUIView *uiView;
 
 // generic
 @property CGFloat yOrigHitBtn;
 @property CGFloat yOrigStandBtn;
 @property BOOL bAppFirstRun;
 @property (nonatomic) NSMutableString *sGameState;
-@property (strong) NSManagedObject *device;
 
-- (void) hitBtnTouched:(UIButton *)sender;
-- (void) standBtnTouched:(UIButton *)sender;
- 
-- (void) setButtonsForNewGame;
+// exposed methods
 - (void) resetGameAndStarts;
 - (void) dealCardsForStart;
-- (void) aiHitMove;
-
-- (void) clearSavedData;
-- (BOOL) resumeGame;
-- (void) saveGameState:(NSString *) state;
-
-- (void) resetText;
-- (void) userBust;
-- (void) dealerBust;
-- (void) decideWhoWins;
-- (void) gameTie;
-- (void) userLost;
-- (void) userWon;
-
-- (NSInteger) getPlayerScore:(NSMutableArray *) cards;
-- (void) addCardToPlayer:(NSMutableArray *) cards;
 
 
 @end

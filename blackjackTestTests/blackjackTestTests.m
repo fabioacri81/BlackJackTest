@@ -20,9 +20,9 @@
     // Put setup code here. This method is called before the invocation of each test method in the class.
     
     _testInstance = [[ViewController alloc] init];
-    [_testInstance viewDidLoad];
-    [_testInstance resetGameAndStarts];
-    [_testInstance dealCardsForStart];
+    [self.testInstance viewDidLoad];
+    [self.testInstance resetGameAndStarts];
+    [self.testInstance dealCardsForStart];
 }
 
 - (void)tearDown {
@@ -32,28 +32,28 @@
 
 - (void) testInitProgram
 {
-    XCTAssertEqual(_testInstance.bjModel.bPlayerTurn, YES, "it's player's turn!");
+    XCTAssertEqual(self.testInstance.bjModel.bPlayerTurn, YES, "it's player's turn!");
 }
 
 - (void) testDealingCardsAndHit
 {
-    XCTAssertTrue(_testInstance.aUserCards.count == 2);
-    XCTAssertTrue(_testInstance.aDealerCards.count == 1);
+    XCTAssertTrue(self.testInstance.aUserCards.count == 2);
+    XCTAssertTrue(self.testInstance.aDealerCards.count == 1);
     
-    [_testInstance hitBtnTouched:_testInstance.uiView.hitBtn];
-    XCTAssertTrue(_testInstance.aUserCards.count == 3);
-    [_testInstance hitBtnTouched:_testInstance.uiView.hitBtn];
-    XCTAssertFalse(_testInstance.aUserCards.count == 3);
+    [self.testInstance hitBtnTouched:self.testInstance.uiView.hitBtn];
+    XCTAssertTrue(self.testInstance.aUserCards.count == 3);
+    [self.testInstance hitBtnTouched:self.testInstance.uiView.hitBtn];
+    XCTAssertFalse(self.testInstance.aUserCards.count == 3);
 }
 
 - (void) testUserBust
 {
-    [_testInstance hitBtnTouched:_testInstance.uiView.hitBtn];
-    [_testInstance hitBtnTouched:_testInstance.uiView.hitBtn];
-    [_testInstance hitBtnTouched:_testInstance.uiView.hitBtn];
-    [_testInstance hitBtnTouched:_testInstance.uiView.hitBtn];
+    [self.testInstance hitBtnTouched:self.testInstance.uiView.hitBtn];
+    [self.testInstance hitBtnTouched:self.testInstance.uiView.hitBtn];
+    [self.testInstance hitBtnTouched:self.testInstance.uiView.hitBtn];
+    [self.testInstance hitBtnTouched:self.testInstance.uiView.hitBtn];
     
-    XCTAssertTrue(_testInstance.bjModel.iUserScore > BJ_TOP_HIT); // this might actually also fail..
+    XCTAssertTrue(self.testInstance.bjModel.iUserScore > BJ_TOP_HIT); // this might actually also fail..
 }
 
 

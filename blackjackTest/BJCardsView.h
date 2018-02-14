@@ -15,8 +15,8 @@
 
 @interface BJCardsView : UIView
 
-@property (strong, nonatomic) NSMutableArray *aUserCards;
-@property (strong, nonatomic) NSMutableArray *aAICards;
+@property (nonatomic) NSMutableArray *aUserCards;
+@property (nonatomic) NSMutableArray *aAICards;
 
 @property CGFloat cardWidth;
 @property CGFloat cardHeight;

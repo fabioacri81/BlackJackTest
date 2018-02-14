@@ -16,12 +16,12 @@
     UIImageView *deckCard = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backCard"]];
     
     CGFloat availableHei = [[UIScreen mainScreen] bounds].size.height - UI_VIEW_HEI - TOP_PADDING*3; //  3 is top padding from screen, padding from deck north, padding south
-    _cardHeight = availableHei / 3;
-    _cardWidth = _cardHeight * 0.69; // ratio of original card image dimensions
+    self.cardHeight = availableHei / 3;
+    self.cardWidth = self.cardHeight * 0.69; // ratio of original card image dimensions
     
-    [deckCard setFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width / 2 - _cardWidth / 2,
-                                  ([[UIScreen mainScreen] bounds].size.height - 100) / 2 - _cardHeight / 2,
-                                  _cardWidth, _cardHeight)];
+    [deckCard setFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width / 2 - self.cardWidth / 2,
+                                  ([[UIScreen mainScreen] bounds].size.height - 100) / 2 - self.cardHeight / 2,
+                                  self.cardWidth, self.cardHeight)];
     
     [self addSubview:deckCard];
 }
@@ -29,12 +29,12 @@
 - (void) dealCards:(NSMutableArray *) cards isDealer:(BOOL) dealer
 {
     if (dealer)
-        _aAICards = [[NSMutableArray alloc] init];
+        self.aAICards = [[NSMutableArray alloc] init];
     else
-        _aUserCards = [[NSMutableArray alloc] init];
+        self.aUserCards = [[NSMutableArray alloc] init];
     
     UIImageView *card;
-    CGFloat xFirstPos = ([[UIScreen mainScreen] bounds].size.width - CARDS_SPACE_BETWEEN - _cardWidth*cards.count) / 2;
+    CGFloat xFirstPos = ([[UIScreen mainScreen] bounds].size.width - CARDS_SPACE_BETWEEN - self.cardWidth*cards.count) / 2;
     
     for (int i = 0; i < cards.count; i++)
     {
@@ -47,7 +47,7 @@
         
         [UIView animateWithDuration:0.6 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             CGRect cardFrame = card.frame;
-            cardFrame.origin.x = xFirstPos + (_cardWidth + CARDS_SPACE_BETWEEN) * i;
+            cardFrame.origin.x = xFirstPos + (self.cardWidth + CARDS_SPACE_BETWEEN) * i;
             cardFrame.origin.y = [self getYPosCardToAdd:dealer];
             card.frame = cardFrame;
             
@@ -61,7 +61,7 @@
 {
     long maxCards = cards.count;
     
-    CGFloat xFirstPos = ([[UIScreen mainScreen] bounds].size.width - CARDS_SPACE_BETWEEN*(maxCards-1) - _cardWidth*maxCards) / 2;
+    CGFloat xFirstPos = ([[UIScreen mainScreen] bounds].size.width - CARDS_SPACE_BETWEEN*(maxCards-1) - self.cardWidth*maxCards) / 2;
     
     UIImageView* card = [[UIImageView alloc] initWithImage:[UIImage imageNamed: cards[maxCards - 1]]];
     [card setFrame:[self getOrigFrame]];
@@ -71,7 +71,7 @@
         
         // set new card pos
         CGRect cardFrame = card.frame;
-        cardFrame.origin.x = xFirstPos + (_cardWidth + CARDS_SPACE_BETWEEN) * (maxCards - 1);
+        cardFrame.origin.x = xFirstPos + (self.cardWidth + CARDS_SPACE_BETWEEN) * (maxCards - 1);
         cardFrame.origin.y = [self getYPosCardToAdd:dealer];
         card.frame = cardFrame;
         
@@ -80,15 +80,15 @@
         {
             if (!dealer)
             {
-                cardFrame = [(UIImageView*)_aUserCards[i] frame];
-                cardFrame.origin.x = xFirstPos + (_cardWidth + CARDS_SPACE_BETWEEN) * i;
-                [(UIImageView*)_aUserCards[i] setFrame:cardFrame];
+                cardFrame = [(UIImageView*)self.aUserCards[i] frame];
+                cardFrame.origin.x = xFirstPos + (self.cardWidth + CARDS_SPACE_BETWEEN) * i;
+                [(UIImageView*)self.aUserCards[i] setFrame:cardFrame];
             }
             else
             {
-                cardFrame = [(UIImageView*)_aAICards[i] frame];
-                cardFrame.origin.x = xFirstPos + (_cardWidth + CARDS_SPACE_BETWEEN) * i;
-                [(UIImageView*)_aAICards[i] setFrame:cardFrame];
+                cardFrame = [(UIImageView*)self.aAICards[i] frame];
+                cardFrame.origin.x = xFirstPos + (self.cardWidth + CARDS_SPACE_BETWEEN) * i;
+                [(UIImageView*)self.aAICards[i] setFrame:cardFrame];
             }
         }
         
@@ -99,40 +99,40 @@
 
 - (CGFloat) getYPosCardToAdd:(BOOL) dealer
 {
-    return dealer ? TOP_PADDING : ([[UIScreen mainScreen] bounds].size.height - UI_VIEW_HEI) / 2 + _cardHeight / 2 + TOP_PADDING;
+    return dealer ? TOP_PADDING : ([[UIScreen mainScreen] bounds].size.height - UI_VIEW_HEI) / 2 + self.cardHeight / 2 + TOP_PADDING;
 }
 
 - (void) addCardToScreen:(UIImageView *) card user:(BOOL) isDealer
 {
     [self addSubview:card];
     if (!isDealer)
-        [_aUserCards addObject:card];
+        [self.aUserCards addObject:card];
     else
-        [_aAICards addObject:card];
+        [self.aAICards addObject:card];
 }
 
 - (CGRect) getOrigFrame
 {
-    return CGRectMake([[UIScreen mainScreen] bounds].size.width / 2 - _cardWidth / 2,
-                      ([[UIScreen mainScreen] bounds].size.height - UI_VIEW_HEI) / 2 - _cardHeight / 2,
-                      _cardWidth, _cardHeight);
+    return CGRectMake([[UIScreen mainScreen] bounds].size.width / 2 - self.cardWidth / 2,
+                      ([[UIScreen mainScreen] bounds].size.height - UI_VIEW_HEI) / 2 - self.cardHeight / 2,
+                      self.cardWidth, self.cardHeight);
 }
 
 - (void) clearCards
 {
-    if (_aUserCards != nil && _aUserCards.count > 0)
+    if (self.aUserCards != nil && self.aUserCards.count > 0)
     {
-        for (long i = _aUserCards.count - 1; i >= 0; i--)
-             [((UIImageView*) _aUserCards[i]) removeFromSuperview];
+        for (long i = self.aUserCards.count - 1; i >= 0; i--)
+             [((UIImageView*) self.aUserCards[i]) removeFromSuperview];
     }
-    [_aUserCards removeAllObjects];
+    [self.aUserCards removeAllObjects];
     
-    if (_aAICards != nil && _aAICards.count > 0)
+    if (self.aAICards != nil && self.aAICards.count > 0)
     {
-        for (long i = _aAICards.count - 1; i >= 0; i--)
-            [((UIImageView*) _aAICards[i]) removeFromSuperview];
+        for (long i = self.aAICards.count - 1; i >= 0; i--)
+            [((UIImageView*) self.aAICards[i]) removeFromSuperview];
     }
-    [_aAICards removeAllObjects];
+    [self.aAICards removeAllObjects];
 }
 
 /*

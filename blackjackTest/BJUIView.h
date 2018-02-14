@@ -14,8 +14,9 @@
 @property (weak, nonatomic) id delegate;
 
 // view components
-@property (strong, nonatomic) UIButton *hitBtn;
-@property (strong, nonatomic) UIButton *standBtn;
+@property (nonatomic) UIButton *hitBtn;
+@property (nonatomic) UIButton *standBtn;
+@property (nonatomic) UITextField* tfResult;
 
 - (void) initView;
 - (void) enableButtons:(BOOL) on;

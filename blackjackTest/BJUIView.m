@@ -16,7 +16,7 @@
 {
     _hitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _hitBtn.backgroundColor = UIColorFromRGB(0xC0D7E8);
-    [_hitBtn setFrame:CGRectMake(38, 8, 116, 55)];
+    [_hitBtn setFrame:CGRectMake(38, [[UIScreen mainScreen]bounds].size.height - 92, 116, 55)];
     [_hitBtn setTitle:@"HIT" forState:UIControlStateNormal];
     [_hitBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_hitBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
@@ -32,7 +32,7 @@
     
     _standBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _standBtn.backgroundColor = UIColorFromRGB(0xC0D7E8);
-    [_standBtn setFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width - (116+38), 8, 116, 55)];
+    [_standBtn setFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width - (116+38), [[UIScreen mainScreen]bounds].size.height - 92, 116, 55)];
     [_standBtn setTitle:@"STAND" forState:UIControlStateNormal];
     [_standBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_standBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
@@ -49,14 +49,26 @@
     _hitBtn.alpha = 0;
     _standBtn.alpha = 0;
     
-    [self addSubview:_hitBtn];
-    [self addSubview:_standBtn];
+    // ideally this component should stay in the uiview..
+    _tfResult = [[UITextField alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen]bounds].size.height / 2 - 25, [[UIScreen mainScreen]bounds].size.width, 50)];
+    _tfResult.borderStyle = UITextBorderStyleRoundedRect;
+    _tfResult.backgroundColor = UIColorFromRGB(0xC0D7E8);
+    _tfResult.textAlignment = NSTextAlignmentCenter;
+    _tfResult.textColor = [UIColor blackColor];
+    _tfResult.font = [UIFont fontWithName:@"Gill Sans" size:40];
+    _tfResult.adjustsFontSizeToFitWidth = YES;
+    _tfResult.alpha = 0;
+    [_tfResult setText:@""];
+    
+    [self addSubview:self.hitBtn];
+    [self addSubview:self.standBtn];
+    [self addSubview:self.tfResult];
 }
 
 - (void) enableButtons:(BOOL) on
 {
-    _hitBtn.userInteractionEnabled = on;
-    _standBtn.userInteractionEnabled = on;
+    self.hitBtn.userInteractionEnabled = on;
+    self.standBtn.userInteractionEnabled = on;
 }
 
 /*
